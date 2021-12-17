@@ -12,18 +12,18 @@
     var list=[];
     var userInpute
     var number=4; 
-    
+
     //declaration 
 
 
-    for (let j = 0; j < number; j++) {
+    for (let i = 0; i < number; i++) {
       userInpute = parseInt(prompt('Entré un nombre :'));
-      list[j] = userInpute;
+      list[i] = userInpute;
 
       for(let i = 0; i < list.length; i++){
 
         if (list[i]>list[i+1]) {
-        alert("la valeur maximal est : "+list[i]+"et sa position est : "+i)
+        alert("la valeur maximal est : "+list[i]+" et sa position est : "+i)
       }
       }
      
