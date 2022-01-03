@@ -10,24 +10,29 @@
   <script>
     var maxNum;
     var list=[];
-    var userInpute
-    var number=4; 
-
+    var userInpute  
     //declaration 
 
 
-    for (let i = 0; i < number; i++) {
+    for (let j = 0; j < 3; j++) 
+    {
       userInpute = parseInt(prompt('Entré un nombre :'));
-      list[i] = userInpute;
+      list[j] = userInpute;
 
-      for(let i = 0; i < list.length; i++){
-
-        if (list[i]>list[i+1]) {
-        alert("la valeur maximal est : "+list[i]+" et sa position est : "+i)
-      }
-      }
-     
+      
     }
-  </script>
+    maxNum=list[0]
+
+    for(let i = 0; i < list.length; i++)
+    {
+
+      if (list[i]>maxNum) 
+      {
+        maxNum=list[i]
+      }
+    }
+    alert("la valeur maximal est : "+maxNum)
+    
+    </script>
 </body>
 </html>
